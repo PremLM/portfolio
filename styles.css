@@ -86,21 +86,6 @@ header .nav-links a:hover {
     margin-bottom: 2rem;
 }
 
-.hero-text .btn {
-    padding: 12px 25px;
-    background: #628ef3;
-    border-radius: 50px;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    margin-right: 15px;
-    transition: background 0.3s;
-}
-
-.hero-text .btn:hover {
-    background: #4facfe;
-}
-
 .hero-image img {
     width: 350px;
     height: 350px;
@@ -163,44 +148,70 @@ header .nav-links a:hover {
     font-weight: 600;
 }
 
-/* Services Section */
-.services-section {
+/* Programming Skills Section */
+.skills-section {
     background: #ffffff;
     padding: 5rem 2rem;
 }
 
-.services-section h2 {
+.skills-section h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
+    color: #333;
 }
 
-.services-grid {
+.skills-grid {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-.service-item {
+.skill-item {
     text-align: center;
-    width: 30%;
+    width: 30%; /* ปรับให้ขนาดใหญ่พอสมควร */
+    padding: 1.5rem;
+    border: 3px solid #4facfe;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
     transition: transform 0.3s ease;
 }
 
-.service-item:hover {
-    transform: scale(1.1);
-}
-
-.service-item img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 1rem;
-    border: 5px solid #555;
-    border-radius: 50%;
-}
-
-.service-item h3 {
-    font-size: 1.2rem;
+.skill-item h3 {
+    font-size: 1.4rem; /* ขนาดตัวอักษรที่ใหญ่ขึ้น */
     font-weight: 600;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.skill-icon {
+    width: 90px; /* เพิ่มขนาดของไอคอน */
+    height: 90px;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+    .skill-item {
+        width: 45%; /* ขนาดลดลงเล็กน้อยเมื่อหน้าจอเล็กลง */
+    }
+}
+
+@media (max-width: 768px) {
+    .skill-item {
+        width: 45%; /* ลดขนาดลงอีกเล็กน้อย */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-item {
+        width: 100%; /* ขยายเต็มเมื่อหน้าจอเล็กสุด */
+    }
 }
 
 /* Projects Section */
