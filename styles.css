@@ -113,43 +113,6 @@ header .nav-links a:hover {
     transform: scale(1.1);
 }
 
-/* Stats Section */
-.stats-section {
-    background-color: #f4f4f4;
-    padding: 5rem 2rem;
-    margin-top: 5rem;
-}
-
-.stats-section .container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.stats-card {
-    text-align: center;
-    padding: 2rem;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    transition: transform 0.3s ease;
-}
-
-.stats-card:hover {
-    transform: translateY(-10px);
-}
-
-.stats-card p {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #00f2fe;
-}
-
-.stats-card h3 {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-}
-
 /* Services Section */
 .services-section {
     background: #ffffff;
