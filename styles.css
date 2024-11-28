@@ -113,6 +113,56 @@ header .nav-links a:hover {
     transform: scale(1.1);
 }
 
+/* Description Section */
+.description-section {
+    background: linear-gradient(135deg, #f0f4f7, #e2e8f0);
+    padding: 4rem;
+}
+
+.description-box {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 850px;
+    margin: 0 auto;
+    border-left: 5px solid #4facfe;
+    position: relative;
+    overflow: hidden;
+}
+
+.description-box::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    width: 60px;
+    height: 5px;
+    background: #4facfe;
+    border-radius: 10px;
+    transform: translateX(-50%);
+}
+
+.description-box h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.description-box p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: center;
+}
+
+.description-box p strong {
+    color: #4facfe;
+    font-weight: 600;
+}
+
 /* Services Section */
 .services-section {
     background: #ffffff;
@@ -151,6 +201,70 @@ header .nav-links a:hover {
 .service-item h3 {
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+/* Projects Section */
+.projects-section {
+    background: #f9f9f9;
+    padding: 5rem 2rem;
+}
+
+.projects-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    padding: 1rem;
+}
+
+.project-item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.project-item p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.project-item .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    background: #628ef3;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.project-item .btn:hover {
+    background: #4facfe;
 }
 
 /* Footer */
