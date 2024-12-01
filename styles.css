@@ -114,8 +114,8 @@ header .nav-links a:hover {
 }
 
 .hero-image img {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     border: 5px solid #555;
     transition: transform 0.3s ease;
@@ -255,8 +255,9 @@ header .nav-links a:hover {
 
 .projects-list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 2rem;
+    justify-content: center; /* จัดให้อยู่ตรงกลาง */
 }
 
 .project-item {
@@ -266,22 +267,28 @@ header .nav-links a:hover {
     overflow: hidden;
     text-align: center;
     transition: box-shadow 0.3s ease;
+    max-width: 350px; /* กำหนดขนาดของแต่ละกล่อง */
+    flex: 1 1 calc(33.333% - 2rem); /* รองรับ 3 คอลัมน์ */
     padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .project-item:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .project-item img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* กำหนดรูปภาพให้พอดีกับกล่อง */
+    height: 200px; /* กำหนดความสูงของรูปภาพ */
+    object-fit: cover; /* จัดให้รูปภาพอยู่ในกรอบอย่างสวยงาม */
+    border-radius: 10px;
     margin-bottom: 1rem;
 }
 
 .project-item h3 {
     font-size: 1.5rem;
     margin: 1rem 0;
+    color: #333;
 }
 
 .project-item p {
@@ -303,6 +310,19 @@ header .nav-links a:hover {
 
 .project-item .btn:hover {
     background: #4facfe;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .project-item {
+        flex: 1 1 calc(50% - 2rem); /* รองรับ 2 คอลัมน์ในหน้าจอขนาดกลาง */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-item {
+        flex: 1 1 100%; 
+    }
 }
 
 /* Footer */
